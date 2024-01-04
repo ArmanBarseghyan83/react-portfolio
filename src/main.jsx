@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/about',
+        index: true,
         element: <About/>
       },
       {
