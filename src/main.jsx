@@ -10,7 +10,6 @@ import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 
 const router = createBrowserRouter([
-  // Todo: Define the accessible routes, and which components respond to which URL
   {
     path: '/',
     element: <App />,

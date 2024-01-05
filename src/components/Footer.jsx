@@ -4,30 +4,28 @@ import { FaGithub, FaStackOverflow, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer>
-      <Container className="text-center">
+      <Container className="text-center text-secondary">
         <Link
-          className="m-2 h3"
+          className="h2"
           to="https://github.com/ArmanBarseghyan83"
           target="_blank"
         >
           <FaGithub />
         </Link>
         <Link
-          className="m-2 h3"
+          className="m-4 h2"
           to="https://www.linkedin.com/in/arman-barseghyan"
           target="_blank"
         >
           <FaLinkedinIn />
         </Link>
         <Link
-          className="m-2 h3"
-          to="https://stackoverflow.com/users/23197769/arman-barseghyan?tab=profile"
+          className="h2"
+          to="https://stackoverflow.com/users/23197769/arman-barseghyan"
           target="_blank"
         >
           <FaStackOverflow />
         </Link>
       </Container>
-    </footer>
   );
 }
