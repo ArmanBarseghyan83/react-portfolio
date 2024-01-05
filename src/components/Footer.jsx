@@ -4,7 +4,7 @@ import { FaGithub, FaStackOverflow, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-      <Container className="text-center text-secondary">
+      <Container className="text-center text-secondary my-5">
         <Link
           className="h2"
           to="https://github.com/ArmanBarseghyan83"
