@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 
 export default function ContantForm() {
   const [name, setName] = useState('');
@@ -42,52 +42,52 @@ export default function ContantForm() {
   };
 
   return (
-    <Container>
       <Row className="justify-content-md-center">
-        <Col xs={12} md={8}>
-          <Form onSubmit={submitHandler}>
-            <Form.Group className="my-2" controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                onBlur={inputBlurHandler}
-                required
-              ></Form.Control>
-            </Form.Group>
+        <Col >
+          <Card className='mb-2'>
+            <Form className='p-4 pb-5' onSubmit={submitHandler}>
+              <Form.Group className="my-2" controlId="name">
+                <Form.Label>Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  onBlur={inputBlurHandler}
+                  required
+                ></Form.Control>
+              </Form.Group>
 
-            <Form.Group className="my-2" controlId="email">
-              <Form.Label>Email Address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onBlur={inputBlurHandler}
-              ></Form.Control>
-            </Form.Group>
+              <Form.Group className="my-2" controlId="email">
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onBlur={inputBlurHandler}
+                ></Form.Control>
+              </Form.Group>
 
-            <Form.Group className="my-2" controlId="message">
-              <Form.Label>Message</Form.Label>
-              <Form.Control
-                as="textarea"
-                row="3"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                onBlur={inputBlurHandler}
-                required
-              ></Form.Control>
-            </Form.Group>
+              <Form.Group className="my-2" controlId="message">
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  row="3"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  onBlur={inputBlurHandler}
+                  required
+                ></Form.Control>
+              </Form.Group>
 
-            <Button type="submit" variant="primary">
-              Submit
-            </Button>
-            <p className='mt-2 text-danger'>{errorMessage}</p>
-          </Form>
+              <Button type="submit" variant="primary">
+                Submit
+              </Button>
+              <p className="mt-2 text-danger position-absolute">{errorMessage}</p>
+            </Form>
+          </Card>
         </Col>
       </Row>
-    </Container>
   );
 }
