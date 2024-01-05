@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <Container>
+      <Container className='position-relative min-vh-100 pt-5' >
         <Outlet />
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 }

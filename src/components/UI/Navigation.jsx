@@ -3,11 +3,16 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 export default function Navigation({ links }) {
   return (
-    <Navbar variant="dark" expand="md" collapseOnSelect className="bg-dark">
+    <Navbar
+      variant="dark"
+      expand="md"
+      collapseOnSelect
+      className="bg-dark fixed-top"
+    >
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <span >Arman Barseghyan</span>
+            <span>Arman Barseghyan</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
