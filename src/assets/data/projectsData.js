@@ -38,7 +38,7 @@ const data = [
     id: 5,
     image: events,
     title: 'Events (react)',
-    demo: ' https://armanbarseghyan83.github.io/events/',
+    demo: 'https://armanbarseghyan83.github.io/events/',
     github: 'https://github.com/ArmanBarseghyan83/events.git',
   },
   {
