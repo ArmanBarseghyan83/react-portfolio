@@ -4,11 +4,11 @@ import hero from '../assets/images/hero.png';
 export default function AboutPage() {
   return (
     <>
-      <Row>
-        <Col>
-          <Image src={hero} alt="programmer" fluid  className='w-75'/>
+      <Row className="mt-lg-4">
+        <Col md={3} xs={5} className='m-auto'>
+          <Image src={hero} alt="programmer" fluid />
         </Col>
-        <Col className="my-auto text-secondary">
+        <Col lg={8} xs={12} className='m-auto'>
           <h2 className='mb-4'>About me</h2>
           <p className='h5' style={{ lineHeight:'1.5'}}>
             Hello, I am a web developer with a Bachelor Degree in Engineering. I
