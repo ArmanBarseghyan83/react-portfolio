@@ -1,25 +1,21 @@
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
+import '../styles/Project.css';
 
 export default function Project({ title, image, github, demo }) {
   return (
-    <Card className="my-2 rounded">
+    <Card className="project my-2 rounded">
       <Link to={demo} target="_blank">
         <Card.Img src={image} variant="top" />
       </Link>
-      <Card.Body>
-        <Card.Title as="div" className="">
+      <Card.Body className="py-1 d-flex justify-content-between align-items-center">
+        <Link to={demo} target="_blank">
           <strong>{title}</strong>
-        </Card.Title>
-        <Card.Text>
-          <Link to={github} target="_blank" className="h2 text-secondary">
-            <FaGithub />
-          </Link>
-          <Link to={demo} target="_blank" className="btn bg-secondary text-light">
-            Demo
-          </Link>
-        </Card.Text>
+        </Link>
+        <Link to={github} target="_blank">
+          <FaGithub />
+        </Link>
       </Card.Body>
     </Card>
   );

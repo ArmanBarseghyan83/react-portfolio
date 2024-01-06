@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import '../../styles/Header.css';
 
 export default function Navigation({ links }) {
   return (
@@ -7,12 +8,12 @@ export default function Navigation({ links }) {
       variant="dark"
       expand="md"
       collapseOnSelect
-      className="bg-dark fixed-top"
+      className="fixed-top p-4"
     >
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <span>Arman Barseghyan</span>
+            <span className="h3">Arman Barseghyan</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
