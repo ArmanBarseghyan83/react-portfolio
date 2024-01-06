@@ -1,9 +1,38 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a website built to showcase my technical skills, web design skills, and projects.
 
-Currently, two official plugins are available:
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (ES6)
+- React
+- React Bootstrap
+- React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-portfolio
+## Usage
+Use the navbar buttons to navigate between the sections. 
+
+### Go to [Portfolio](https://2portfoli.netlify.app/)
+
+About Me page
+![About Me page](./src/assets/images/about.png)
+Porfolio page
+![Portfolio page](./src/assets/images/portfolio.png)
+Contact page
+![Contact page](./src/assets/images/contact.png)
+Resume page
+![Redume page](./src/assets/images/resume.png)
+
+## Credits
+
+Throughout this past year, I have completed different online courses and have previous programming experience by building my portfolio projects.
+
+Please see my [Portfolio](https://armanbarseghyan83.github.io/portfolio/).
+
+## Questions
+### Use the links below if you have any questions.
+- Email Address - [armanbarseghyan83@gmail.com](mailto:armanbarseghyan83@gmail.com)
+- Linkedin - [https://www.linkedin.com/in/arman-barseghyan](https://www.linkedin.com/in/arman-barseghyan)
+- GitHub Profile - [https://github.com/ArmanBarseghyan83](https://github.com/ArmanBarseghyan83)
