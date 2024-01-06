@@ -12,7 +12,7 @@ export default function ContactPage() {
         <Col lg={7}>
           <ContactForm />
         </Col>
-        <Col className="h5">
+        <Col className="h6">
           <Card className="p-3 ">
             <Row>
               <Link to="tel:+18182387558">
