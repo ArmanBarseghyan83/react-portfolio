@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
+import { Row, Col, Button, Form, Card } from 'react-bootstrap';
 
 export default function ContantForm() {
   const [name, setName] = useState('');
@@ -11,8 +11,10 @@ export default function ContantForm() {
   const submitHandler = (e) => {
     e.preventDefault();
 
+    // Don't let to submit if fields are empty.
     if ((!name, !email, !message)) return;
 
+    // Clean the fields after submit.
     setName('');
     setEmail('');
     setMessage('');
@@ -21,12 +23,9 @@ export default function ContantForm() {
   const inputBlurHandler = (e) => {
     const inputType = e?.target?.type;
 
+    // Check which input was blurred, display error message if any.
     if (inputType === 'text') {
-      if (name) {
-        setErrorMessage('');
-      } else {
-        setErrorMessage('Name is required');
-      }
+      name ? setErrorMessage('') : setErrorMessage('Name is required');
     } else if (inputType === 'email') {
       const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
       if (email) {

@@ -2,6 +2,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaStackOverflow, FaLinkedinIn } from 'react-icons/fa';
 
+// Footer to display on every page.
 export default function Footer() {
   return (
     <footer>

@@ -1,11 +1,6 @@
 import { Card, Row, Col, ListGroup } from 'react-bootstrap';
-import { MdDownload } from "react-icons/md";
 import '../styles/Resume.css'
 import resume from '../assets/images/Arman_Resume.pdf'
-import { HiDownload } from "react-icons/hi";
-import { LiaDownloadSolid } from "react-icons/lia";
-import { FcDownload } from "react-icons/fc";
-import { PiDownloadSimpleThin } from "react-icons/pi";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function ResumePage() {

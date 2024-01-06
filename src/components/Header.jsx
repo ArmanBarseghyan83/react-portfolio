@@ -4,6 +4,7 @@ import '../styles/Header.css';
 export default function Header() {
   return (
     <Navigation
+    // Pass paths and titles to the navigation component
       links={[
         { title: 'About Me', path: '/' },
         { title: 'Portfolio', path: '/portfolio' },

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import '../styles/Project.css';
 
+// Componet to use in the Header component
 export default function Project({ title, image, github, demo }) {
   return (
     <Card className="project my-2 rounded">
