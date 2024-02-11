@@ -25,12 +25,6 @@ Contact page
 Resume page
 ![Redume page](./src/assets/images/resume.png)
 
-## Credits
-
-Throughout this past year, I have completed different online courses and have previous programming experience by building my portfolio projects.
-
-Please see my [Portfolio](https://armanbarseghyan83.github.io/portfolio/).
-
 ## Questions
 ### Use the links below if you have any questions.
 - Email Address - [armanbarseghyan83@gmail.com](mailto:armanbarseghyan83@gmail.com)
